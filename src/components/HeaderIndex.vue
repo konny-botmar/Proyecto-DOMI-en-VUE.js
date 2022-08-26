@@ -1,6 +1,6 @@
 <template> 
         <nav>
-            <img class="logo" src="../assets/LOGO.png" alt="">
+            <img class="logo" src="../assets/logo.png" alt="">
             <ul class="nav-right-section">
                 <li>
                     <a href="">
