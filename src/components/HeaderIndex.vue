@@ -1,7 +1,7 @@
 <template> 
         <nav>
             <img class="logo" src="../assets/logo.png" alt="">
-            <ul class="nav-right-section">
+            <ul v-show="!mobileView" class="nav-right-section">
                 <li>
                     <a href="">
                         <img class="car" src="../assets/shopping-car.jpg" alt="carrito de compras">
@@ -22,12 +22,22 @@
                     <button class="check-in">REGISTRAR</button>
                 </li>
             </ul>
+            <div v-show="!showNav">
+                <a href="#">
+                    <img class="menu-icon" src="../assets/menu1.jpg" alt="">
+                </a>
+            </div>
         </nav>
 </template>
 
 <script>
 export default {
-  name: 'HeaderIndex',
+    data() {
+        return{
+            mobileView: true,
+            showNav: false
+        }
+    }
 }
 </script>
 
@@ -113,5 +123,12 @@ nav .nav-right-section .car{
     width: 3.5rem;
     margin-right: 15rem;
  }
+
+ nav  .menu-icon{
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+   width: 4rem;
+   margin-left: 18rem;
+}
 
 </style>

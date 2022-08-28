@@ -1,17 +1,15 @@
 <template>
   <img alt="" src="">
     <HeaderIndex/>
-    <HelloWorld />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import HeaderIndex from './components/HeaderIndex.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     HeaderIndex
   }
 }
