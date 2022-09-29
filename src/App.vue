@@ -1,16 +1,22 @@
 <template>
   <img alt="" src="">
     <HeaderIndex/>
-
+    <video-introductory/>
+    <FooterIndex/>
 </template>
 
 <script>
 import HeaderIndex from './components/HeaderIndex.vue'
+import VideoIntroductory from './components/VideoIntroductory.vue'
+import FooterIndex from './components/FooterIndex.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HeaderIndex
+    HeaderIndex,
+    VideoIntroductory,
+    FooterIndex,
   }
 }
 </script>

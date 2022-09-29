@@ -34,8 +34,8 @@
 export default {
     data() {
         return{
-            mobileView: true,
-            showNav: false
+            mobileView: false,
+            showNav: true
         }
     }
 }
