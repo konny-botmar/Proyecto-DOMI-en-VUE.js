@@ -2,6 +2,7 @@
   <img alt="" src="">
     <HeaderIndex/>
     <video-introductory/>
+    <all-categories/>
     <FooterIndex/>
 </template>
 
@@ -9,6 +10,7 @@
 import HeaderIndex from './components/HeaderIndex.vue'
 import VideoIntroductory from './components/VideoIntroductory.vue'
 import FooterIndex from './components/FooterIndex.vue'
+import AllCategories from './components/AllCategories.vue'
 
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     HeaderIndex,
     VideoIntroductory,
+    AllCategories,
     FooterIndex,
   }
 }
